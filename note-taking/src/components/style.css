@@ -1,7 +1,7 @@
 #navbar{
     width: 100%;
     display: flex;
-    background-color: #852acb;
+    background-color: #f31616;
     justify-content: space-between;
     color: rgb(220, 217, 234);
     font-size: 22px;
@@ -21,4 +21,96 @@
     text-decoration: none;
     margin-top: 19px;
     color: white;
+  }
+  .email__input {
+    border: 1px solid rgb(153, 149, 149);
+    width: 98%;
+    height: 98%;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 12px;
+    margin-top: 6px;
+  }
+  .email__label {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    color: rgb(184, 179, 179);
+    transition: 0.9s;
+    font-size: 25px;
+  }
+  
+  .email__form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .form__container {
+    width: 25%;
+    height: 47px;
+    position: relative;
+  }
+  
+  .email__input:focus + .email__label {
+    top: 0.4rem;
+    font-size: 14px;
+  }
+  
+  .email__input:not(:placeholder-shown).email__input:not(:focus) + .email__label {
+    top: 0.4rem;
+    font-size: 14px;
+  }
+  
+  .email__input:focus-visible {
+    outline: none;
+  }
+  
+  .primary__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    cursor: pointer;
+    /* padding: 0.9rem 1.2rem; */
+    padding: 11px 13px;
+    border-radius: 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-right: 8px;
+  }
+  .itemscard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 13px;
+    margin-top: 50px;
+  }
+  .itemscard>a{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+  }
+  form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    padding: 12px;
+  }
+  .inp{
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 7px;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  .details{
+    box-shadow: rgba(201, 16, 16, 0.35) 0px 5px 15px;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 20px;
   }
